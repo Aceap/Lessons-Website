@@ -22,15 +22,11 @@ body {
     border-radius: 5px;
     position: relative;
     top: 10px;
+    background-repeat: inherit;
 }
 
-em {
-    font-style: normal;
-    font-size: 40px;
-}
-
-.white {
-    color: white;
+.sign {
+    color: #660000;
 }
 
 h2 {

@@ -5,6 +5,29 @@
     <title>Web网站-教学大纲</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <style>
+        @font-face {
+        //导入字体
+        font-family: 'Quicksand';
+            src: url("font/Quicksand-VariableFont_wght.ttf");
+        }
+
+        #item {
+            font-weight: 800;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 100px;
+            letter-spacing: .2rem;
+            text-align: left;
+            margin: auto 30px;
+            color: transparent;
+            text-shadow: 0 0 1px rgba(255, 255, 255, .6),
+            0 4px 4px rgba(0, 0, 0, .05);
+        }
+
+        .Box {
+            width: 100%;
+            height: 130px;
+            margin: 0 auto;
+        }
 
         .row {
             margin: 10px;
@@ -50,7 +73,13 @@
     <li><a href="video.html">视频资料</a></li>
     <li><a href="liuyan.html">留言板</a></li>
 </ul>
+
 <hr color="white">
+
+<div class="Box">
+    <p id="item">HTML5</p>
+</div>
+
 <div class="row">
     <h2 align="center">全部教程</h2>
     <p>网站主要实现教学大纲、课程介绍等教学内容的浏览，教学课件和视频资料的浏览下载，简单的留言和回复功能。</p>
@@ -60,6 +89,36 @@
 </div>
 <hr color="white">
 <p align="center" class="sign">陈龙的Web课程学习网站</p>
-
 </body>
+<script type="text/javascript">
+    let index = 0;
+    let b = document.getElementsByClassName("Box");
+    let pItem = document.getElementById("item");
+    b[0].style.backgroundColor = 'rgba(228,77,39,0.5)';
+
+    function changeItem() {
+        index++;
+        if (index >= 3) index = 0;
+        for (let i = 0; i < 3; i++) {
+            if (index == 0) {
+                pItem.innerText = "HTML5";
+                pItem.style.textAlign = "left";
+                b[0].style.backgroundColor = 'rgba(228,77,39,0.5)';
+            }
+            if (index == 1) {
+                pItem.innerText = "CSS";
+                pItem.style.textAlign = "center";
+                b[0].style.backgroundColor = 'rgba(10,113,170,0.5)';
+            }
+            if (index == 2) {
+                pItem.innerText = "JavaScript";
+                pItem.style.textAlign = "right";
+                b[0].style.backgroundColor = 'rgba(103,169,105,0.8)';
+            }
+        }
+    }
+
+    //设置定时器
+    setInterval(changeItem, 3500);
+</script>
 </html>

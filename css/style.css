@@ -1,5 +1,4 @@
 body {
-    /*background-image: url("../image/bg1.jpg");*/
     background-color: rgba(204, 204, 204, 0.62);
     background-position: center center;
     background-repeat: no-repeat;
@@ -10,6 +9,7 @@ body {
 
 .header {
     background-image: url("../image/header_bg.png");
+    background-repeat: repeat-x;
     height: 100px;
     margin: 10px;
     color: white;

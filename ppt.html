@@ -23,9 +23,18 @@
             background-color: rgba(255, 255, 255, 0.8);
         }
 
+        .row_l {
+            margin: 0 auto;
+        }
+
         .row_l a {
             margin: 3px;
+            padding: 2px;
             display: block;
+        }
+
+        .row_l a:hover {
+            border: gray solid;
         }
 
         .row1 img {
@@ -33,7 +42,9 @@
         }
 
         .row1 div {
-            float: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
             padding-right: 30px;
         }
 
@@ -41,11 +52,16 @@
             list-style-type: none;
             margin-top: 28px;
             margin-bottom: 47px;
+            padding: 2px;
             display: block;
         }
 
         .row_r a {
             color: red;
+        }
+
+        .row_r a:hover {
+            color: blue;
         }
     </style>
 </head>

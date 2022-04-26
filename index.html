@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Web网站-教学大纲</title>
+    <link href="image/web.png" rel="icon">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/change.js"></script>
     <style>
@@ -35,11 +36,14 @@
             background-color: rgba(255, 255, 255, 0.4);
             padding: 10px;
             overflow: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .row a {
-            display: block;
-            float: left;
+            /*display: block;*/
+            /*float: left;*/
             width: 400px;
             height: 200px;
             margin: 20px;
@@ -82,8 +86,7 @@
 </div>
 
 <div class="row">
-    <h2 align="center">全部教程</h2>
-    <p>网站主要实现教学大纲、课程介绍等教学内容的浏览，教学课件和视频资料的浏览下载，简单的留言和回复功能。</p>
+    <h2 style="text-align: center;width: 100%">全部教程</h2>
     <a href="html.html"><h2>【学习HTML】</h2><img src="image/html.jpg"><br>HTML即超文本编辑语言(Hyper Text Markup Language)</a>
     <a href="css.html"><h2>【学习CSS】</h2><img src="image/css.jpg"><br>层叠样式表(Cascading StyleSheet)</a>
     <a href="js.html"><h2>【学习JavaScript】</h2><img src="image/js.jpg"><br>JavaScript是web的编程语言</a>

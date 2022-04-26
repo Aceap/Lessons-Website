@@ -32,6 +32,13 @@ h2 {
     color: #660000;
 }
 
+.other {
+    font-size: 20px;
+    font-weight: bold;
+    color: #660000;
+    text-decoration: none;
+}
+
 .row {
     margin: 10px;
     background-color: rgba(255, 255, 255, 0.4);

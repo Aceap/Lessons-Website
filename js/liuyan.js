@@ -31,7 +31,7 @@ window.onload = function () {
 
         //添加留言
         let Li = document.createElement("li");
-        Li.innerHTML = username + ':' + MsgValue + " &nbsp;&nbsp;&nbsp;<button>删除</button><br>！";
+        Li.innerHTML = username + ':' + MsgValue + " &nbsp;&nbsp;&nbsp;<button>删除</button><br>";
         let arrayLi = Ul.getElementsByTagName("li");
         if (arrayLi.length > 0) { //判断是否已有留言
             Ul.insertBefore(Li, arrayLi[0]);

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>视频资料</title>
-    <link href="image/video.jpg" rel="icon">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/change.js"></script>
+    <link href="../image/video.jpg" rel="icon">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="../js/change.js"></script>
     <style>
         h2 {
             text-align: center;
@@ -17,7 +17,7 @@
 
         .row {
             overflow: hidden;
-            height: 500px;
+            height: 100%;
             max-width: 100%;
             display: flex;
             flex-direction: row;
@@ -51,14 +51,18 @@
             vertical-align: middle;
             width: 100px;
         }
+
+        .foot {
+            max-height: 10%;
+        }
     </style>
 </head>
 <body>
 
-<div class="header"><a href="index.html" title="返回首页"><img alt="东华理工大学" src="image/logo.png"></a></div>
+<div class="header"><a href="../index.html" title="返回首页"><img alt="东华理工大学" src="../image/logo.png"></a></div>
 
 <ul class="topmenu">
-    <li><a href="index.html">教学大纲</a></li>
+    <li><a href="../index.html">首页</a></li>
     <li><a href="html.html">课程介绍</a></li>
     <li><a href="ppt.html">教学课件</a></li>
     <li><a class="active" href="video.html">视频资料</a></li>
@@ -68,19 +72,21 @@
 <div class="row">
     <h2>教学视频在线观看</h2>
     <br/>
-    <a href="html_play.html"><img src="image/html.jpg">
+    <a href="html_play.html"><img src="../image/html.jpg">
         HTML课程视频
     </a>
-    <a href="css_play.html"><img src="image/css.jpg">
+    <a href="css_play.html"><img src="../image/css.jpg">
         CSS课程视频
     </a>
-    <a href="js_play.html"><img src="image/js.jpg">
+    <a href="js_play.html"><img src="../image/js.jpg">
         JS课程视频
     </a>
 
 </div>
 <hr color="white">
-<p align="center" class="sign">陈龙的Web课程学习网站</p>
-<h3 align="center" class="time"></h3>
+<div class="foot">
+    <p align="center" class="sign">陈龙的Web课程学习网站</p>
+    <h3 align="center" class="time"></h3>
+</div>
 </body>
 </html>
